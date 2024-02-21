@@ -16,7 +16,7 @@ class WhoisHandler(http.server.BaseHTTPRequestHandler):
 
         if 'whois' in query_params:
             domain = query_params['whois'][0]
-            domain = domain.replace('"', '\\"').replace("'", "\\'")
+            domain = domain.replace('"', '\\"') #.replace("'", "\\'")
             host = args.host
 
             whois_command = f'whois -h {host} -p 43 "{domain}"'
