@@ -23,7 +23,7 @@ class WhoisHandler(http.server.BaseHTTPRequestHandler):
 
             try:
                 result = subprocess.check_output(whois_command, shell=True, text=True)
-                response = f"Whois information for {domain}:\n{result}"
+                response = f"{result}"
             except subprocess.CalledProcessError as e:
                 response = f"Error executing whois command: {e}"
 
