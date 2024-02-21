@@ -1,5 +1,5 @@
 # HTTP2Whois
-Python script to easily use remote whois protocol from local HTTP server (for pentesting purposes)
+Python script to easily use remote whois registries from local HTTP server (for pentesting purposes)
 
 ## Prerequisites
 - http.server
